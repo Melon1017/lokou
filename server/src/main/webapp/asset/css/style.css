@@ -1,0 +1,79 @@
+.lokou_content{
+	max-width:1024;
+	margin-top:50px;
+}
+.lokou_textarea{
+	width:100%;
+}
+.lokou_login_textarea {
+	width:100%;
+}
+.lokou_input{
+	width:100%;
+}
+.lokou_mdl-checkbox{
+	margin-top:10px;
+}
+.lokou_mdl-login_button{
+	margin-top:30px;
+}
+.lokou_check_label{
+	float:left;
+	margin-left:0px;
+	
+}
+.lokou_table{
+	width:100%;
+}
+.lokou_cell{
+	width:100%;
+}
+.lokou-drawer-header {
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 16px;
+  height: 151px;
+}
+.lokou-avatar-dropdown {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.lokou-navigation {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.lokou-navigation .mdl-navigation__link {
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(255, 255, 255, 0.56);
+  font-weight: 500;
+}
+.lokou-navigation.mdl-navigation__link:hover {
+  background-color: #1de9b6;
+  color: #37474F;
+}

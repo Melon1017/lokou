@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<!-- 控制台输出 -->
+
+	<appender name="PROJECTE_RROR"
+		class="com.lokou.myweb.common.ConfigCenterDailyRollingFileAppender">
+		<param name="file" value="/home/myweb/logs/myweb.log" />
+		<param name="encoding" value="UTF-8" />
+		<param name="threshold" value="info" />
+		<param name="MaxFileSize" value="50MB" />
+		<param name="MaxBackupIndex" value="10" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d [%X{requestURIWithQueryString}] %-5p %c{2} - %m%n" />
+		</layout>
+	</appender>
+	<appender name="PROJECT"
+		class="com.lokou.myweb.common.ConfigCenterDailyRollingFileAppender">
+		<param name="file" value="/home/myweb/logs/error.log" />
+		<param name="encoding" value="UTF-8" />
+		<param name="threshold" value="error" />
+		<param name="MaxFileSize" value="50MB" />
+		<param name="MaxBackupIndex" value="10" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d [%X{requestURIWithQueryString}] %-5p %c{2} - %m%n" />
+		</layout>
+	</appender>
+	<appender name="console"
+		class="com.lokou.myweb.common.ConfigCenterDailyRollingFileAppender">
+		<param name="Target" value="System.out" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-5p: %c - %m%n" />
+		</layout>
+	</appender>
+	<appender name="raft"
+		class="com.lokou.myweb.common.ConfigCenterDailyRollingFileAppender">
+		<param name="file" value="/home/myweb/logs/raft.log" />
+		<param name="encoding" value="UTF-8" />
+		<param name="threshold" value="error" />
+		<param name="MaxFileSize" value="50MB" />
+		<param name="MaxBackupIndex" value="10" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d [%X{requestURIWithQueryString}] %-5p %c{2} - %m%n" />
+		</layout>
+	</appender>
+	<appender name="client"
+		class="com.lokou.myweb.common.ConfigCenterDailyRollingFileAppender">
+		<param name="file" value="/home/myweb/logs/client.log" />
+		<param name="encoding" value="UTF-8" />
+		<param name="threshold" value="error" />
+		<param name="MaxFileSize" value="50MB" />
+		<param name="MaxBackupIndex" value="10" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d [%X{requestURIWithQueryString}] %-5p %c{2} - %m%n" />
+		</layout>
+	</appender>
+	<root>
+		<level value="info" />
+		<appender-ref ref="console" />
+		<appender-ref ref="PROJECT" />
+		<appender-ref ref="PROJECTE_RROR" />
+	</root>
+</log4j:configuration>

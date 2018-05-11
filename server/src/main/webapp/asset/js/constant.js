@@ -1,0 +1,1 @@
+var rootPath="http://localhost:5233/lokou";
